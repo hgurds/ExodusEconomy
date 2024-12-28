@@ -1,0 +1,16 @@
+name: ExodusEconomy
+version: '1.0-SNAPSHOT'
+main: org.exodusEconomy.ExodusEconomy
+api-version: '1.21'
+commands:
+  balance :
+    description: Check your current balance.
+    usage: /balance help
+    subcommands:
+      get :
+        usage : /balance get <player>
+        description : Get a player's balance.
+      set :
+        usage : /balance set <public|private>
+        description : Set your balance's privacy.
+    aliases: [bal]
